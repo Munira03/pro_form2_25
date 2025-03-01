@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="script.js"></script>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="signupForm">
+        <div for="email-container">
+            <label for="email">Email</label>
+            <br>
+            <input type="email" palceholder="Example@email.com" id="email" oninput="validateEmail()">
+            <p id="emailError" class="error">Email is required</p>
+        
+        </div>
+
+        <div class="password-container">
+            <label for="password">Password</label>
+            <br>
+            <input type="password" palceholder="Your Password" id="password" oninput="validatePassword()">
+            <p id="passwordError" class="error">Password is required</p>
+        </div>
+
+        <button type="Submit" id="btn-submit" disabled>Submit</button>
+    </form>
+</body>
+</html>
